@@ -63,6 +63,8 @@ public class Dasher_Main : MonoBehaviour
         if(track_time){
             dash_attack_timer += Time.deltaTime;
         }
+        dash_attack_cooldown += Time.deltaTime;
+
         //dash_attack_cooldown += Time.deltaTime;
 
         //Debug.Log(dash_attack_timer);
@@ -70,12 +72,13 @@ public class Dasher_Main : MonoBehaviour
 
         if(Physics.Raycast(transform.position,transform.forward,range))
         {
-
+            
             Debug.Log("TRIGGGER!");
             track_time = true;
-            if (dash_attack_timer < .5f) { 
+            if (dash_attack_timer < .5f && dash_attack_cooldown > 2f) { 
                 NavMeshA.velocity = new Vector3(0,0,0);
                 }
+            dash_attack_cooldown = 0;
             
 
             

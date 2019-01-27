@@ -15,9 +15,13 @@ public class Chase : MonoBehaviour
         if(col.gameObject.name == "Player"){
             Destroy(col.gameObject); //Destroy player on collision
         }
+    }
 
-        if(col.gameObject.name == "Bullet"){ //Bullet object name
+    void OnTriggerEnter(Collider col){
+
+        if(col.gameObject.tag == "Bullet"){
             health--; //This reduces health by one in the main script
+            Destroy(col.gameObject);
         }
     }
     void Start()
@@ -25,11 +29,13 @@ public class Chase : MonoBehaviour
         nav_agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         player = GameObject.Find("Player");
         
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         nav_agent.destination = player.transform.position;
         if(health == 0){
             Destroy(gameObject);

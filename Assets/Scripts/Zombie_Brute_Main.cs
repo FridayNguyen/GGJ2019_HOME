@@ -23,12 +23,9 @@ public class Zombie_Brute_Main : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         StartCoroutine(flicker_delay());
-        Debug.Log("SECOND TRIGGER!");
     }
 
     IEnumerator flicker_delay(){
-
-        Debug.Log("TRIGGA ME BABY!");
         //531482
         //rgb(83,20,130)
         //rend.material.color = new Color(83,20,130,1);

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 537776476755123645}
   - component: {fileID: 9078175145819223321}
   - component: {fileID: 5004441558069693654}
+  - component: {fileID: 1830209186225213637}
   m_Layer: 0
   m_Name: ZombieBrute
   m_TagString: Untagged
@@ -62,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: a116722f4de484a6ea7bb6dbf1c315c3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -90,10 +91,10 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537776476755123637}
   serializedVersion: 2
-  m_Mass: 2000000
-  m_Drag: 0
+  m_Mass: 1
+  m_Drag: 1
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -107,18 +108,18 @@ NavMeshAgent:
   m_GameObject: {fileID: 537776476755123637}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3
+  m_Radius: 0.1
+  m_Speed: 12
   m_Acceleration: 10
   avoidancePriority: 50
-  m_AngularSpeed: 80
-  m_StoppingDistance: 0
+  m_AngularSpeed: 140
+  m_StoppingDistance: 0.1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1
   m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
+  m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
 --- !u!114 &537776476755123645
 MonoBehaviour:
@@ -154,8 +155,21 @@ MeshCollider:
   m_GameObject: {fileID: 537776476755123637}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1830209186225213637
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537776476755123637}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 1.3136706, z: 1.0000002}
+  m_Center: {x: 0.00000007947286, y: 0.34316698, z: -0.00000007947286}

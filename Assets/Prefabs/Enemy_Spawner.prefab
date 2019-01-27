@@ -42,12 +42,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7980396552463128304}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9019ff49fbc8bf4a9cc06ba55df1eeb, type: 3}
+  m_Script: {fileID: 11500000, guid: 07f56c97b4a414d91b6b75e9a7fb2eb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombieType: {fileID: 4194923671225666777, guid: 03f0e27c4834b424f875ad9abc18de55,
-    type: 3}
-  spawnTime: 1
-  spawnPoints: {fileID: 7980396552463128306}
-  mob_cap: 5
-  randSpawnCap: 2
+  zombieType: {fileID: 0}
+  spawnTime: 0
+  spawnPoints: {fileID: 0}
+  mob_cap: 1
+  randSpawnCap: 1
