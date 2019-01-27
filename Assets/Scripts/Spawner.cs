@@ -28,6 +28,11 @@ public class Spawner : MonoBehaviour
         // Potentially have the time vary to allow for different rates of spawn.
     }
 
+	void DestroyGameObject()
+    {
+        Destroy(gameObject);
+    }
+	
     void Spawn()
     {
        //spawnPoints = trans;
@@ -40,6 +45,8 @@ public class Spawner : MonoBehaviour
                 Instantiate(zombieType, spawnPoints.position, spawnPoints.rotation);
                 mob_cap--;
             }
-        }
+        } else {
+			DestroyGameObject();
+		}
     }
 }
