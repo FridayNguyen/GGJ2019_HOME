@@ -27,13 +27,13 @@ public class PlayerMove : MonoBehaviour
     void Move()
     {
         //Vector3 direction = new Vector3(Input.GetAxis("HorizontalKey"), 0, Input.GetAxis("VerticalKey"));
-        Vector3 rightMovement = right * moveSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey");
-        Vector3 upMovement = forward * moveSpeed * Time.deltaTime * Input.GetAxis("VerticalKey");
+        Vector3 rightMovement = right * moveSpeed *  Input.GetAxis("HorizontalKey");
+        Vector3 upMovement = forward * moveSpeed *  Input.GetAxis("VerticalKey");
 
         //Vector3 heading = Vector3.Normalize(rightMovement + upMovement);
 
         //transform.forward = heading;
-        transform.position += Vector3.ClampMagnitude(rightMovement + upMovement, moveSpeed);
+        transform.position += Vector3.ClampMagnitude((rightMovement + upMovement), moveSpeed) * Time.deltaTime;
         //transform.position += rightMovement;
         //transform.position += upMovement;
     }
