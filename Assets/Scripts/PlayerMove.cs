@@ -8,6 +8,8 @@ public class PlayerMove : MonoBehaviour
     float moveSpeed = 4f;
     Vector3 forward, right;
 
+    public AudioSource footsteps;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,20 +17,33 @@ public class PlayerMove : MonoBehaviour
         forward.y = 0;
         forward = Vector3.Normalize(forward);
         right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
+
+        footsteps.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         if (Input.anyKey)
+        {
             Move();
+            if (!footsteps.isPlaying)
+            {
+                footsteps.loop = true;
+                footsteps.Play();
+            }
+        }
+        else
+        {
+            footsteps.Stop();
+        }
     }
 
     void Move()
     {
         //Vector3 direction = new Vector3(Input.GetAxis("HorizontalKey"), 0, Input.GetAxis("VerticalKey"));
-        Vector3 rightMovement = right * moveSpeed *  Input.GetAxis("HorizontalKey");
-        Vector3 upMovement = forward * moveSpeed *  Input.GetAxis("VerticalKey");
+        Vector3 rightMovement = right * moveSpeed * Input.GetAxis("HorizontalKey");
+        Vector3 upMovement = forward * moveSpeed * Input.GetAxis("VerticalKey");
 
         //Vector3 heading = Vector3.Normalize(rightMovement + upMovement);
 

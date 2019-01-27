@@ -104,9 +104,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 9065527313589170087}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db91e781b2dbb4f8f80caab56958d143, type: 3}
+  m_Script: {fileID: 11500000, guid: 9c3027954818d4139a458ac6b18f03a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dash_force: 0
+  range: 0
 --- !u!195 &9065527313589170080
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -138,11 +140,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 9065527313589170087}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52933f7d74a4e4aa1b538e6208b742a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 05b471bcb69064a4e98c91ae93c9cfc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dash_force: 40
-  range: 10
 --- !u!54 &9065527313589170111
 Rigidbody:
   m_ObjectHideFlags: 0

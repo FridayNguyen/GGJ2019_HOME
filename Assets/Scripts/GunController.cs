@@ -14,10 +14,12 @@ public class GunController : MonoBehaviour
 
     public Transform firePoint;
 
+    public AudioSource gunshot;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        gunshot.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -31,6 +33,7 @@ public class GunController : MonoBehaviour
                 shotCounter = timeBetweenShots;
                 BulletController newBullet = Instantiate(bullet, firePoint.position, firePoint.rotation) as BulletController;
                 newBullet.speed = bulletSpeed;
+                gunshot.Play();
             }
         }
         else
