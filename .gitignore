@@ -36,3 +36,28 @@ sysinfo.txt
 *.apk
 *.unitypackage
 *.meta
+Assets/TinyFire VFX/Demo.unity
+Assets/TinyFire VFX/LightControl.cs
+Assets/TinyFire VFX/Materials/slashAlphaMat 2.mat
+Assets/TinyFire VFX/Materials/sphereAlphaMat.mat
+Assets/TinyFire VFX/Materials/starAlphaMat.mat
+Assets/TinyFire VFX/Materials/triangleAlphaMat.mat
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire.prefab
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire3.prefab
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire3_Chaos.prefab
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire3_Darkness.prefab
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire3_Poison.prefab
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire3_Strong.prefab
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire4.prefab
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire4_Darkness.prefab
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire4_Poison.prefab
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire4_Strong.prefab
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire5.prefab
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire5_Chaos.prefab
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire5_Darkness.prefab
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire5_Poison.prefab
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire5_Strong.prefab
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire_Chaos.prefab
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire_Darkness.prefab
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire_Poison.prefab
+Assets/TinyFire VFX/Prefabs/TinyFire/TinyFire_Strong.prefab
