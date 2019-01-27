@@ -9,8 +9,8 @@ public class Spawner : MonoBehaviour
     public GameObject zombieType;                // The enemy prefab to be spawned.
     public float spawnTime;            // How long between each spawn.
     public Transform spawnPoints;         // An array of the spawn points this enemy can spawn from.
-    public int mob_cap;                     // The amount of zombies to be allowed to be spawned from manager
-    public int randSpawnCap;                       // the max that should be spawned at a time
+    public int mob_cap = 1;                     // The amount of zombies to be allowed to be spawned from manager
+    public int randSpawnCap = 1;                       // the max that should be spawned at a time
     //Meant to enable spawning of a specific enemy type via a fcn.
     public void spawn_point(GameObject zombie, float time, int cap, Transform trans, int spawnQuantity)
     {
@@ -31,9 +31,9 @@ public class Spawner : MonoBehaviour
     void Spawn()
     {
        //spawnPoints = trans;
-       int spawn_amount = Random.Range(0, randSpawnCap); //how many enemy to spawn
+       int spawn_amount = Random.Range(1, randSpawnCap+1); //how many enemy to spawn at a moment
 
-        if (mob_cap != 0)
+        if (!(mob_cap <= 0))
         {
             // Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
             for (int enemy_to_spawn = 1; enemy_to_spawn <= spawn_amount; enemy_to_spawn++) {
