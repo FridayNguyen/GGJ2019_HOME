@@ -1,51 +1,53 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2178563525087821024
+--- !u!1 &7980396552463128304
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 385212601318991922, guid: f12067c0740fb0040b1010d1f73959b7,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2178563525087821026}
-  - component: {fileID: 2178563525087821027}
+  - component: {fileID: 7980396552463128306}
+  - component: {fileID: 7980396552463128305}
   m_Layer: 0
-  m_Name: Enemy_Spawner_ZombieBrute
+  m_Name: Enemy_Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2178563525087821026
+--- !u!4 &7980396552463128306
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6478567989663544547, guid: f12067c0740fb0040b1010d1f73959b7,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2178563525087821024}
+  m_GameObject: {fileID: 7980396552463128304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.7, y: 2.9, z: -1.9990435}
+  m_LocalPosition: {x: -19.8485, y: 9.3, z: -16.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2178563525087821027
+--- !u!114 &7980396552463128305
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2178563525087821024}
+  m_GameObject: {fileID: 7980396552463128304}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9019ff49fbc8bf4a9cc06ba55df1eeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombieType: {fileID: 537776476755123637, guid: 30dad347ea1c8f24b91ba7d4ab52f60f,
+  zombieType: {fileID: 4194923671225666777, guid: 03f0e27c4834b424f875ad9abc18de55,
     type: 3}
-  spawnTime: 5
-  spawnPoints: {fileID: 2178563525087821026}
+  spawnTime: 1
+  spawnPoints: {fileID: 7980396552463128306}
   mob_cap: 5
   randSpawnCap: 2
