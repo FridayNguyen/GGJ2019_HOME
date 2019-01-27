@@ -14,9 +14,7 @@ public class Zombie_Brute_Main : MonoBehaviour
     void Awake()
     {
         gameObject.GetComponent<Chase>().setHealth(health); //Calling set health var to 10 because it must take more hits
-    
         rend = gameObject.GetComponent<Renderer>();
-
         myColor = rend.material.color;
     }
 
