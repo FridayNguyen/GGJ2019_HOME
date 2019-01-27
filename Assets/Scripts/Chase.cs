@@ -7,7 +7,8 @@ using UnityEngine;
 public class Chase : MonoBehaviour
 {
     UnityEngine.AI.NavMeshAgent nav_agent;
-    public Transform goal; //Nav System, don't fuck with
+
+    private GameObject player;
     private int health; //Only able to access through the set method
     void OnCollisionEnter(Collision col){
 
@@ -22,13 +23,14 @@ public class Chase : MonoBehaviour
     void Start()
     {
         nav_agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        player = GameObject.Find("Player");
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        nav_agent.destination = goal.position;
+        nav_agent.destination = player.transform.position;
         if(health == 0){
             Destroy(gameObject);
         }

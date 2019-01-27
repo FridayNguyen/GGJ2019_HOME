@@ -157,6 +157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4120060589988329989}
   - component: {fileID: 2808939935323438531}
+  - component: {fileID: 1351758027298611579}
   m_Layer: 0
   m_Name: bullet-shotgun
   m_TagString: Untagged
@@ -193,3 +194,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
+--- !u!65 &1351758027298611579
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8194874377183028879}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.01, z: 0.01}
+  m_Center: {x: 0, y: 0, z: 0}
