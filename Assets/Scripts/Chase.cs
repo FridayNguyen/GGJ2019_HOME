@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 
@@ -13,7 +14,7 @@ public class Chase : MonoBehaviour
     void OnCollisionEnter(Collision col){
 
         if(col.gameObject.name == "Player"){
-            Destroy(col.gameObject); //Destroy player on collision
+            Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
         }
     }
 
@@ -28,8 +29,7 @@ public class Chase : MonoBehaviour
     {
         nav_agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         player = GameObject.Find("Player");
-        
-        
+    
     }
 
     // Update is called once per frame

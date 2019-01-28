@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c3027954818d4139a458ac6b18f03a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dash_force: 60
+  dash_force: 40
   range: 18
 --- !u!195 &9065527313589170080
 NavMeshAgent:

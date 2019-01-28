@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss_Main_Script : MonoBehaviour
 {
@@ -67,7 +68,8 @@ public class Boss_Main_Script : MonoBehaviour
     void OnTriggerEnter(Collider col){
 
         if(col.gameObject.tag == "Player"){
-            Destroy(col.gameObject); //Alter later with game manager
+
+            Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
         }
 
     }
